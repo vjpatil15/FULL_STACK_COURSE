@@ -1,4 +1,4 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,6 +6,59 @@
 </head>
 
 <body>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    
+    input {
+      margin: 2px 0;
+    }
+    
+    fieldset {
+      background-color: lightyellow;
+      border: 10px solid yellow;
+      margin-bottom: 10px;
+      width: 720px;
+    }
+    
+    label {
+      display: inline-block;
+      width: 180px;
+      text-align: right;
+      vertical-align: top;
+      margin-right: 5px;
+    }
+    
+    label.rad,
+    label.chk {
+      width: auto;
+    }
+    
+    .left,
+    .right {
+      display: inline-block;
+      width: 50px;
+      text-align: center;
+      vertical-align: top;
+      color: white;
+      padding: 1px;
+    }
+    
+    .left {
+      background-color: darkred;
+    }
+    
+    .right {
+      background-color: purple;
+    }
+    
+    textarea {
+      width: 360px;
+      height: 50px;
+    }
+  </style>
+
   <h1>Please Enter Your Details For our Dating Website</h1>
   <form id="Dating Application" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data" method="post">
     <fieldset>
