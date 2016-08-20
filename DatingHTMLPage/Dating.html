@@ -15,19 +15,24 @@
       margin: 2px 0;
     }
     
-    fieldset {
-      background-color: lightyellow;
-      border: 10px solid yellow;
-      margin-bottom: 10px;
-      width: 720px;
-    }
-    
     label {
       display: inline-block;
       width: 180px;
       text-align: right;
       vertical-align: top;
       margin-right: 5px;
+    }
+    
+    input:hover,
+    label:hover {
+      font-size: 20px;
+    }
+    
+    fieldset {
+      background-color: lightyellow;
+      border: 10px solid yellow;
+      margin-bottom: 10px;
+      width: 720px;
     }
     
     label.rad,
@@ -60,12 +65,12 @@
   </style>
 
   <h1>Please Enter Your Details For our Dating Website</h1>
-  <form id="Dating Application" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data" method="post">
+  <form id="Dating Application" action="" enctype="multipart/form-data" method="post">
     <fieldset>
       <legend>Your Face</legend>
       <label for="pic">Your Picture: </label>
       <input name="pic" type="file" required>
-      <br/>
+      <br />
       <label for="preview">Image Preview: </label> <img id="preview" />
     </fieldset>
 
@@ -73,22 +78,22 @@
       <legend>Your General Details</legend>
       <label for="name">Name: </label>
       <input id="name" name="name" type="text" required>
-      <br/>
+      <br />
       <label>Gender: </label>
       <input name="gender" id="male" type="radio" value="male" required>
       <label class="rad" for="male">Male</label>
       <input name="gender" id="female" type="radio" value="female" required>
       <label class="rad" for="female">Female</label>
-      <br/>
+      <br />
       <label for="age">Age: </label>
       <input id="age" name="age" type="number">
-      <br/>
+      <br />
       <label for="dob">Date of birth: </label>
       <input id="dob" name="dob" type="date">
-      <br/>
+      <br />
       <label for="color">Favorite Color: </label>
       <input id="color" name="color" type="color">
-      <br/>
+      <br />
       <label for="country">Country: </label>
       <select name="country" id="country">
         <option></option>
@@ -106,7 +111,7 @@
       <span class="left">Short</span>
       <input id="height" type="range" min="0" max="100">
       <span class="right">Tall</span>
-      <br/>
+      <br />
       <label for="salary">Salary:</label>
       <span class="left">Poor</span>
       <input id="salary" type="range" min="0" max="100">
@@ -117,13 +122,13 @@
       <legend>Your Contact Information</legend>
       <label for="email">Email:</label>
       <input id="email" type="email" required>
-      <br/>
+      <br />
       <label for="tel">Telephone:</label>
       <input id="tel" type="tel">
-      <br/>
+      <br />
       <label for="address">Address:</label>
       <textarea id="address" form="Dating Application"></textarea>
-      <br/>
+      <br />
       <label for="contact">Method to contact you:</label>
       <input name="contact" id="emailchk" value="email" type="checkbox">
       <label class="chk" for="emailchk">Email</label>
@@ -135,7 +140,7 @@
     <input type="submit">
 
   </form>
-
+  <script src=""></script>
 </body>
 
 </html>
